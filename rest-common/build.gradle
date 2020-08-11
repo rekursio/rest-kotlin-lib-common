@@ -22,9 +22,12 @@ kotlin {
 dependencies {
     implementation libraries.kotlin
 
+    // Ktor
     implementation common_libraries.ktor
     implementation common_libraries.ktor_netty
+    implementation common_libraries.logback_classic
 
+    // Test
     testImplementation libraries.junit
     testImplementation libraries.kotlin_junit
 }
